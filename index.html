@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <title>CSS 3 Only Clock experiment</title>
+  <meta name="Generator" content="EditPlus">
+
+  <meta name="Author" content="Warpdesign">
+  <meta name="Keywords" content="css3,html5,webkit,firefox">
+  <meta name="Description" content="A little experiment for a better clock setting widget">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/warpclock.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.65732.js"></script>
+  <script type="text/javascript" src="js/clock.js"></script>
+  <script type="text/javascript">
+	$(function() {
+		var myClock = new Clock({
+			el: '.clock',
+			minutes: 15,
+			hours: 5
+		});
+	});
+  </script>
+ </head>
+
+ <body>
+  <div class="clock" style="float:left;">
+	<div class="center"></div>
+	<div class="minutes">
+		<div class="handler"><span>§</span></div>
+	</div>
+	<div class="hours">
+		<div class="handler"><span>§</span></div>	
+	</div>
+  </div>
+ </body>
+</html>
